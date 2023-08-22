@@ -9,7 +9,7 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET SDKs'
+  displayName: 'Use .NET SDK'
   inputs:
     packageType: sdk
     version: '6.x'
@@ -40,4 +40,4 @@ steps:
   inputs:
     command: 'build'
     arguments: '--no-restore --configuration Release'
-    projects: '**/*.csprocj'
+    projects: '**/*.csproj'
